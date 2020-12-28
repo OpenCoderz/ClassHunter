@@ -1,8 +1,8 @@
 let fs=require("fs");
 
-const MAIL_ID=""
+const MAIL_ID="Enter your mail";
 
-const PASSWORD=""
+const PASSWORD="Enter your  password";
 
 
 const TIMETABLE={	
@@ -43,6 +43,18 @@ const INTERVAL_TIME_TO_JOIN_CLASS=(1)*60000; //(in minutes)
 
 const INTERVAL_TIME_TO_LEAVE_CLASS=(1)*60000; //(in minutes)
 
+const SELECTOR_FOR_HIDE_POPUP=".llhEMd";
+
+const SELECTOR_FOR_GETTING_PEOPLE_FOR_JOINING=".U04fid";
+
+const SELECTOR_FOR_GETTING_PEOPLE_FOR_LEAVEING=".rua5Nb";
+
+const SELECTOR_FOR_JOINING_CLASS_BUTTON=".NPEfkd";
+
+const SELECTOR_FOR_LEAVEING_CLASS_BUTTON=".U26fgb";
+
+
+
 function createCookieJson()
 {
 		// if file not exit write a empty json on it 
@@ -52,6 +64,7 @@ function createCookieJson()
 		}
 }
 createCookieJson();
+
 module.exports={
 					MAIL_ID,
 					PASSWORD, 
@@ -61,5 +74,10 @@ module.exports={
 					MAX_STUDENT_TO_LEAVE,
 					MAX_ATTEMPT_TO_JOIN_CLASS,
 					INTERVAL_TIME_TO_JOIN_CLASS,
-					INTERVAL_TIME_TO_LEAVE_CLASS
+					INTERVAL_TIME_TO_LEAVE_CLASS,
+					SELECTOR_FOR_HIDE_POPUP,
+					SELECTOR_FOR_GETTING_PEOPLE_FOR_JOINING,
+					SELECTOR_FOR_GETTING_PEOPLE_FOR_LEAVEING,
+					SELECTOR_FOR_JOINING_CLASS_BUTTON,
+					SELECTOR_FOR_LEAVEING_CLASS_BUTTON
 				};

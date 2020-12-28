@@ -8,13 +8,14 @@ function findPresentClass()
 	let today_time=today_date[1].split(":");
 	console.log(today_time);
 	//ONLY FOR TESTING
-	today_time=["10","30","5"]
+	today_time=["11","30","5"]
 	console.log(CLASS_DURATIONS);
 	//parsing today hr and min 
 	let today_hr=parseInt(today_time[0]);
 	let today_min=parseInt(today_time[1]);
 	//getting time zone 
 	let today_zone=today_date[2];
+	//ONLY FOR TESTING
 	today_zone="AM";
 	//iterating class duration and finding the present class
 	for(let period_no in CLASS_DURATIONS)

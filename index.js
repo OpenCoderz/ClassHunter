@@ -18,7 +18,6 @@ let findNextClassTime=require("./functions/findNextClassTime");
 
 let CalculateTime=require("./functions/CalculateTime");
 
-
 let EventEmitter=require("events");
  																
 // 	findpersentclass
@@ -30,7 +29,7 @@ let EventEmitter=require("events");
 // find the method to login
 // 		|
 // 		|
-//   ______|_________________
+//   ___|_________________
 // 	|					|
 // 	|					|
 // 	1.using cookie		2.siginGoogle
@@ -121,8 +120,8 @@ class ClassHunter extends EventEmitter
  	async closeBrowser()
  	{
  		console.log("Class is over Bye");
- 		// await this.browser.close();
- 		// process.exit(1);
+ 		await this.browser.close();
+ 		process.exit(1);
  	}
 }
 

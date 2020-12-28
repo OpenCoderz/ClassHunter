@@ -1,5 +1,6 @@
 const puppeteer=require('puppeteer');
 const cookies=require("../cookie/cookies.json");
+
 async function startBrowser()
 {
 	try

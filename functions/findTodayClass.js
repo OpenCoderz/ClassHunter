@@ -5,7 +5,10 @@ function findTodayclass()
 {
 		//getting today day
 		let today=new Date().getDay();
+
+		//only for testing 
 		today=2;
+		
 		//getting today time table 
 		today_periods=TIMETABLE[today];
 		//if today period was exit
